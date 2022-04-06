@@ -1,0 +1,82 @@
+.section{
+    width: 100%;
+    margin :1.2rem auto 0px auto ;
+}
+
+.slider_col{
+    position: relative;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding :2rem 0px 3rem; 
+}
+.slider_col .left , .slider_col .right{
+    position: relative;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    transform: translate3d();
+    margin : auto 0.4rem;
+}
+/* .slider_col.arrow_right{
+    position: absolute;
+    right: -25px;
+    top:50%;
+    cursor: pointer;
+    transform: translateY(-50%);
+} */
+/* .arrows{
+    position: relative;
+    width: 109%;
+    height: 30px;
+    z-index: 2;
+    top: 50%;
+    right: 0px;
+    left: 0px;
+    transform: translateY(-50%);
+    background-color: aquamarine;
+} */
+.slider_col_warrper{
+    position: relative;
+    width: 100%;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -ms-scroll-snap-type: x mandatory;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    scrollbar-color:transparent ;
+    
+}
+.slider_col_warrper::-webkit-scrollbar {
+    visibility: hidden;
+  }
+.cates_list , .slider_list {
+    position: relative;
+    display: flex;
+}
+
+.cat{
+    /* width : 130px ; */
+    min-width : 110px ;
+    height: 110px;
+    background-color: white;
+    margin: 4px 1.2rem;
+    padding: 4px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.cat:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 30px -20px, rgba(0, 0, 0, 0.3) 0px 20px 60px -30px
+}
+
+/* here the advires section */
+.section_advir_bottom{
+    /* min-height:200px ; */
+    margin-top: 5px;
+}
