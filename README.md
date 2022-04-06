@@ -2,7 +2,8 @@
 
 # Fatima
 
-1- Navigations in Home and Categories
+1- Navigations in Home and Categories ... Done
+2- Books Show in Home Page
 
 # Doha
 
