@@ -4,7 +4,7 @@
 
 1- Navigations in Home and Categories
 
-# Doha
+#Doha
 
 1- Slider in home and categories
 
@@ -12,7 +12,7 @@
 
 1- Ads in home page only
 
-# Muhammed 
+#Muhammed 
 
 1- Footer in home and categories 
 
