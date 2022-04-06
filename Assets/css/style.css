@@ -1,0 +1,89 @@
+/* banner block */
+.banner{
+    position: relative;
+    padding: 0 20px;
+}
+.banner__item{
+    width: 100%;
+    display: none
+}
+.banner__img{
+    width: 100%;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    padding: 16px;
+    margin-top: -22px;
+    color: gray;
+    font-size: 50px;
+    transition: 0.6s ease;
+    user-select: none;
+}
+.prev {
+    right: 50px;
+}
+.next{
+    left: 50px;
+}
+.unit{
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    padding: 10px 0;
+    width: 97%;
+    text-align: center;
+}
+.unit__item {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .unit__item:hover {
+    background-color: #fff;
+}
+
+/* End banner block */
+
+/* Responsive */
+/*  */
+@media only screen and (max-width: 992px)
+{
+    section{
+        padding-top: 20px;
+    }
+    /* banner block */
+    .unit__item {
+        height: 10px;
+        width: 10px;
+    }
+    .prev, .next{
+        font-size: 37px;
+    }
+}
+
+
+@media only screen and (max-width: 768px)
+{
+
+}
+
+@media only screen and (max-width: 576px)
+{
+    /* banner block */
+    .unit{
+        width: 88%;
+    }
+    .unit__item {
+        height: 7px;
+        width: 7px;
+    }
+    .prev, .next {
+        font-size: 25px;
+    }
+}
