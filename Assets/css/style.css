@@ -1,4 +1,157 @@
 
+/* @author FatimaAlmashhor */
+:root{
+    --white: #fff;
+    --main-gray : #f9fafc ;
+    --dark-gray:#eff2f7 ;
+    --dark-brown:#333 ;
+    --light-brown:#484848;
+    --white-text: white ;
+    --gray-text : #a6a6a6;
+    --light-yellow-gray:#e6e6e6;
+    --lang: rtl;
+    --tables: 1016px ;
+    --desktop:  1200px;
+    --far-away-shadow : rgba(50, 50, 93, 0.25) 0px 30px 30px -20px, rgba(0, 0, 0, 0.3) 0px 20px 60px -30px;
+    --flat-shadow : rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    --flat-shadow-hover : rgba(50, 50, 93, 0.25) 0px 2px 3px -1px, rgba(0, 0, 0, 0.3) 0px 1px 2px -4px;
+}
+
+*{
+    margin: 0px;
+    padding: 0px ;
+    box-sizing: border-box;
+    transition: 0.3s linear;
+}
+body{
+    font-family: 'Tajawal',sans-serif;
+    overflow-x: hidden;
+    direction: var(--lang);
+}
+body.en{
+    --lang :ltr ; 
+    direction: var(--lang);
+}
+button{
+    font-family: inherit;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+img{
+    width: 100%;
+}
+ul{
+    list-style: none;
+    
+}
+.container{
+    /* padding :0px clamp( 0px,  6%, 9% ); */
+    max-width: 1200px;
+    margin: 0px auto;
+}
+input{
+    width: 100%;
+    border: none;
+    background-color: inherit;
+    border-radius: inherit;
+    padding : 0px 8px;
+    color: inherit;
+}
+/* just to test */
+/* end fatima section */
+
+/* banner block */
+.banner{
+    position: relative;
+    padding: 0 20px;
+}
+.banner__item{
+    width: 100%;
+    display: none
+}
+.banner__img{
+    width: 100%;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    padding: 16px;
+    margin-top: -22px;
+    color: gray;
+    font-size: 50px;
+    transition: 0.6s ease;
+    user-select: none;
+}
+.prev {
+    right: 50px;
+}
+.next{
+    left: 50px;
+}
+.unit{
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    padding: 10px 0;
+    width: 97%;
+    text-align: center;
+}
+.unit__item {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .unit__item:hover {
+    background-color: #fff;
+}
+
+/* End banner block */
+
+/* Responsive */
+/*  */
+@media only screen and (max-width: 992px)
+{
+    section{
+        padding-top: 20px;
+    }
+    /* banner block */
+    .unit__item {
+        height: 10px;
+        width: 10px;
+    }
+    .prev, .next{
+        font-size: 37px;
+    }
+}
+
+
+@media only screen and (max-width: 768px)
+{
+
+}
+
+@media only screen and (max-width: 576px)
+{
+    /* banner block */
+    .unit{
+        width: 88%;
+    }
+    .unit__item {
+        height: 7px;
+        width: 7px;
+    }
+    .prev, .next {
+        font-size: 25px;
+    }
+
+
 .ads{
     display: flex;
     flex-wrap: wrap;
@@ -103,3 +256,6 @@
         font-size: 25px;
     }
 }
+
+}
+
