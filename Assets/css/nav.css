@@ -38,6 +38,7 @@ nav{
 }
 
 .nav_icon{
+    display: inline-block;
     width: 15px;
     height: 15px;
     margin:auto 8px;
