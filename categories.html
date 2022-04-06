@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
         <!-- Render All Elements Normally -->
         <link rel="stylesheet" href="Assets/css/normalize.css" />
         <!-- Font Awesome Library -->
@@ -20,11 +21,120 @@
         <link
             href="https://fonts.googleapis.com/css2?family=Anton&family=Cairo:wght@200&family=Fruktur&family=Griffy&family=Lobster&family=Lobster+Two&family=Luxurious+Roman&family=Mochiy+Pop+One&family=Open+Sans:wght@300&family=Work+Sans:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;1,300&display=swap"
             rel="stylesheet">
+      <!-- style sheet navigation -->
+    <link rel="stylesheet" href="./Assets/css/nav.css">
+    <!-- /style sheet navigation -->
+    <!-- reset styling -->
+    <link rel="stylesheet" href="./Assets/css/reset.css">
+    <!-- /reset styling -->
+    <link rel="stylesheet" href="./Assets/css/style.css">
     
             <title>Categories</title>
 </head>
 
 <body>
+  
+  <!-- /@auth FatimaAlmashhor -->
+    <!--  navigation  -->
+    <nav class="">
+        <ul class="nav-list  container">
+            <li class=" flex-row flex-center login-btn">
+                <i class="nav_icon"><img src="./Assets/svgs/svgexport-5.svg" /></i>
+                <span>أدخل لحسابك اوسجل الان </span>
+            </li>
+            <li>
+                <a href='./index.html'>
+                    <i class="nav_icon"><img src="./Assets/svgs/star.svg" /></i>
+                    <span> الرئسية </span>
+                </a>
+            </li>
+            <li>
+                <a href=''>
+                    <i class="nav_icon"><img src="./Assets/svgs/delivery.svg" /></i>
+                    <span>من نحن </span>
+                </a>
+            </li>
+            <li>
+                <a href=''>
+                    <i class="nav_icon"><img src="./Assets/svgs/security.svg" /></i>
+                    <span>اتصل بنا </span>
+                </a>
+            </li>
+            <li>
+                <a href=''>
+                    <i class="nav_icon"><img src="./Assets/svgs/help.svg" /></i>
+                    <span> المساعدة </span>
+                </a>
+            </li>
+            <li>
+                <a href=''>
+                    <i class="nav_icon"><img src="./Assets/svgs/location.svg" /></i>
+                    <span> سيايسه الخصوصيه </span>
+                </a>
+            </li>
+            <li>
+                <a href=''>
+                    <i class=""></i>
+                    <span> اليمن </span>
+                </a>
+            </li>
+
+            <li id='switch_lang' class="flex-row flex-center">
+                <i class="nav_icon"><img src="./Assets/svgs/langs.svg" /></i>
+                <span> English </span>
+            </li>
+
+        </ul>
+        <div id='humburger' class="  humbrger">
+            <div class="w-20 ">
+                <img src="./Assets/svgs/humbarger.svg" alt="">
+            </div>
+        </div>
+    </nav>
+    <!--/navigation  -->
+  
+      <!-- // By Dhoha:: banner -->
+    <!-- banner -->
+    <section>
+        <div class="banner">
+
+            <!-- images slide -->
+            <div class="banner__item">
+                <img class="banner__img" src="assets/images/banner/1.jpg" alt="">
+            </div>
+            <div class="banner__item">
+                <img class="banner__img" src="assets/images/banner/2.jpg" alt="">
+            </div>
+            <div class="banner__item">
+                <img class="banner__img" src="assets/images/banner/5.jpg" alt="">
+            </div>
+            <div class="banner__item">
+                <img class="banner__img" src="assets/images/banner/3.jpg" alt="">
+            </div>
+            <div class="banner__item">
+                <img class="banner__img" src="assets/images/banner/4.jpg" alt="">
+            </div>
+            <div class="banner__item">
+                <img class="banner__img" src="assets/images/banner/5.jpg" alt="">
+            </div>
+
+            <!-- prev and next slide -->
+            <a class="prev" onclick="plus(-1)">&#10095;</a>
+            <a class="next" onclick="plus(1)">&#10094;</a>
+
+            <!-- unit -->
+            <div class="unit">
+                <span class="unit__item" onclick="current(1)"></span>
+                <span class="unit__item" onclick="current(2)"></span>
+                <span class="unit__item" onclick="current(3)"></span>
+                <span class="unit__item" onclick="current(4)"></span>
+                <span class="unit__item" onclick="current(5)"></span>
+                <span class="unit__item" onclick="current(6)"></span>
+            </div>
+        </div>
+    </section>
+    <!-- /banner -->
+    <!-- // By Dhoha:: /banner -->
 
 <!---------------Start Footer-Mohammed Aldoais-------------------------------------->
 <footer>
@@ -209,6 +319,8 @@
 
 <!---------------End Footer-Mohammed Aldoais-------------------------------------->
 
+    
+    <script src="Assets/js/app.js"></script>
 </body>
 
 </html>
