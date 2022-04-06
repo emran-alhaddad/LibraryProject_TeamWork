@@ -1,0 +1,63 @@
+/* @author FatimaAlmashhor */
+:root{
+    --white: #fff;
+    --main-gray : #f9fafc ;
+    --dark-gray:#eff2f7 ;
+    --dark-brown:#333 ;
+    --light-brown:#484848;
+    --white-text: white ;
+    --gray-text : #a6a6a6;
+    --light-yellow-gray:#e6e6e6;
+    --lang: rtl;
+    --tables: 1016px ;
+    --desktop:  1200px;
+    --far-away-shadow : rgba(50, 50, 93, 0.25) 0px 30px 30px -20px, rgba(0, 0, 0, 0.3) 0px 20px 60px -30px;
+    --flat-shadow : rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    --flat-shadow-hover : rgba(50, 50, 93, 0.25) 0px 2px 3px -1px, rgba(0, 0, 0, 0.3) 0px 1px 2px -4px;
+}
+
+*{
+    margin: 0px;
+    padding: 0px ;
+    box-sizing: border-box;
+    transition: 0.3s linear;
+}
+body{
+    font-family: 'Tajawal',sans-serif;
+    overflow-x: hidden;
+    direction: var(--lang);
+}
+body.en{
+    --lang :ltr ; 
+    direction: var(--lang);
+}
+button{
+    font-family: inherit;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+img{
+    width: 100%;
+  
+}
+ul{
+    list-style: none;
+    
+}
+.container{
+    /* padding :0px clamp( 0px,  6%, 9% ); */
+    max-width: 1200px;
+    margin: 0px auto;
+}
+input{
+    width: 100%;
+    border: none;
+    background-color: inherit;
+    border-radius: inherit;
+    padding : 0px 8px;
+    color: inherit;
+}
+
+/* end fatima section */
